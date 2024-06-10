@@ -1,0 +1,18 @@
+12:31:27.512 [main]INFO  SimpleLog4jDemo.class - INFO
+12:31:27.558 [main]DEBUG SimpleLog4jDemo.class - DEBUG
+12:31:27.559 [main]WARN  SimpleLog4jDemo.class - WARNING
+12:31:27.560 [main]ERROR SimpleLog4jDemo.class - ERROR
+12:31:27.561 [main]FATAL SimpleLog4jDemo.class - FATAL
+12:32:56.764 [TestNG-test=Test-2]INFO  SimpleLog4jDemo.class - Test case started -- coming from log4j
+12:32:57.280 [TestNG-test=Test-1]INFO  SimpleLog4jDemo.class - Test case started  -- coming from log4j
+12:32:59.136 [TestNG-test=Test-2]INFO  SimpleLog4jDemo.class - Test case ended  -- coming from log4j
+12:33:01.256 [TestNG-test=Test-1]INFO  SimpleLog4jDemo.class - Test case ended  -- coming from log4j
+19:35:48.053 [TestNG-test=Test-2]INFO  SimpleLog4jDemo.class - Test case started -- coming from log4j
+19:35:48.246 [TestNG-test=Test-1]INFO  SimpleLog4jDemo.class - Test case started  -- coming from log4j
+19:36:11.849 [TestNG-test=Test-1]INFO  SimpleLog4jDemo.class - Test case ended  -- coming from log4j
+19:39:20.259 [TestNG-test=Test-2]INFO  SimpleLog4jDemo.class - Test case started -- coming from log4j
+19:39:24.161 [TestNG-test=Test-2]INFO  SimpleLog4jDemo.class - Test case ended  -- coming from log4j
+20:00:19.011 [TestNG-test=Test-2]INFO  SimpleLog4jDemo.class - Test case started -- coming from log4j
+20:00:19.291 [TestNG-test=Test-1]INFO  SimpleLog4jDemo.class - Test case started  -- coming from log4j
+20:00:31.316 [TestNG-test=Test-2]INFO  SimpleLog4jDemo.class - Test case ended  -- coming from log4j
+20:00:31.899 [TestNG-test=Test-1]INFO  SimpleLog4jDemo.class - Test case ended  -- coming from log4j
