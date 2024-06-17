@@ -1,9 +1,15 @@
 package driverFactory;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.remote.Browser;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -12,15 +18,43 @@ public class DriverFactory {
 	public static ThreadLocal<WebDriver> tl_driver = new ThreadLocal<WebDriver>();
 
 	public static WebDriver init_driver(String browserName) {
+		System.out.println("Browser initiated in local");
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			tl_driver.set(new ChromeDriver());
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			tl_driver.set(new FirefoxDriver());
-		} else if (browserName.equalsIgnoreCase("safari")) {
-			WebDriverManager.safaridriver().setup();
-			tl_driver.set(new SafariDriver());
+		} else if (browserName.equalsIgnoreCase("InternetExplorer")) {
+			WebDriverManager.edgedriver().setup();
+			tl_driver.set(new EdgeDriver());
+		} else {
+			System.out.println("Please enter valid browser");
+		}
+
+		getDriver().manage().window().maximize();
+		return getDriver();
+	}
+	
+	@SuppressWarnings("deprecation")
+	public static WebDriver init_driver_in_docker(String browserName) throws MalformedURLException {
+		System.out.println("Browser initiated in docker");
+		URL url = new URL("http://localhost:4444/wd/hub");
+		if (browserName.equalsIgnoreCase("chrome")) {
+			WebDriverManager.chromedriver().browserInDocker().setup();
+			DesiredCapabilities cap = new DesiredCapabilities();
+			cap.setBrowserName("chrome");
+			tl_driver.set(new RemoteWebDriver(url, cap));
+		} else if (browserName.equalsIgnoreCase("firefox")) {
+			WebDriverManager.firefoxdriver().browserInDocker().setup();
+			DesiredCapabilities cap = new DesiredCapabilities();
+			cap.setBrowserName("firefox");
+			tl_driver.set(new RemoteWebDriver(url, cap));
+		} else if (browserName.equalsIgnoreCase("internetexplorer")) {
+			WebDriverManager.edgedriver().browserInDocker().setup();
+			DesiredCapabilities cap = new DesiredCapabilities();
+			cap.setBrowserName("MicrosoftEdge");
+			tl_driver.set(new RemoteWebDriver(url, cap));
 		} else {
 			System.out.println("Please enter valid browser");
 		}

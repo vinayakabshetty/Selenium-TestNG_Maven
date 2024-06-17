@@ -15,7 +15,7 @@ public class SwagLabs extends TestBase {
 
 	@Test(priority = 1)
 	public void loginToSwagLabs() {
-		log.info("Test case started  -- coming from log4j");
+		log.info("Test case started");
 		SwagLabsLoginPage swagLabsLoginPage = new SwagLabsLoginPage();
 		SwagLabsInventoryPage swagLabsInventoryPage = new SwagLabsInventoryPage();
 		swagLabsLoginPage.navigateToSwagLabsLoginPage();
@@ -23,12 +23,12 @@ public class SwagLabs extends TestBase {
 		swagLabsLoginPage.enterPassword("secret_sauce");
 		swagLabsLoginPage.clickOnLoginButton();
 		swagLabsInventoryPage.countItemsInInventory();
-		log.info("Test case ended  -- coming from log4j");
+		log.info("Test case ended");
 	}
 
 	@Test(priority = 2)
 	public void loginToSwagLabs_lockedOutUser() {
-		log.info("Test case started -- coming from log4j");
+		log.info("Test case started");
 		SwagLabsLoginPage swagLabsLoginPage = new SwagLabsLoginPage();
 		swagLabsLoginPage.navigateToSwagLabsLoginPage();
 		swagLabsLoginPage.enterUserName("locked_out_user");
@@ -37,6 +37,6 @@ public class SwagLabs extends TestBase {
 		String actualErrorMsg = swagLabsLoginPage.getLoginErrorMessage();
 		String expectedErrorMsg = "Epic sadface: Sorry, this user has been locked out.";
 		Assert.assertTrue(actualErrorMsg.equals(expectedErrorMsg), "Error message mismatch");
-		log.info("Test case ended  -- coming from log4j");
+		log.info("Test case ended");
 	}
 }

@@ -25,7 +25,7 @@ public class Navigation_TestCases extends TestBase {
 		page.navigate(url);
 	}
 
-	@DataProvider(name = "ecommerceWebSiteUrl")
+	@DataProvider(name = "ecommerceWebSiteUrl", parallel=true)
 	public Object[][] dataProviderMethod() {
 		return new Object[][] { { "https://www.amazon.in"},{ "https://www.flipkart.com" },
 				{ "https://www.snapdeal.com"} };
