@@ -8,7 +8,7 @@
 	<test thread-count="10" name="ChromeTests">
 		<parameter name="browserName" value="chrome"></parameter>
 		<classes>
-			<class name="tests.Navigation_TestCases" />
+			<class name="tests.Navigation_TC" />
 		</classes>
 	</test> <!--Test -->
 	<test thread-count="10" name="FirefoxTests">

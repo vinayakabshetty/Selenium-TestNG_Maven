@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import pages.NavigationPage;
 import utilities.TestBase;
 
-public class Navigation_TestCases extends TestBase {
+public class Navigation_TC extends TestBase {
 
 	@Ignore
 	@Test(priority = 1)

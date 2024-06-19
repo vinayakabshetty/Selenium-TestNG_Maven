@@ -222,3 +222,7 @@
 10:47:24.391 [TestNG-tests-3]INFO  SimpleLog4jDemo.class - Test case ended
 10:47:28.061 [TestNG-tests-3]INFO  SimpleLog4jDemo.class - Test case started
 10:47:29.473 [TestNG-tests-3]INFO  SimpleLog4jDemo.class - Test case ended
+14:54:28.781 [TestNG-test=Test-2]INFO  SimpleLog4jDemo.class - Test case started
+14:54:28.878 [TestNG-test=Test-1]INFO  SimpleLog4jDemo.class - Test case started
+14:54:30.570 [TestNG-test=Test-2]INFO  SimpleLog4jDemo.class - Test case ended
+14:54:31.027 [TestNG-test=Test-1]INFO  SimpleLog4jDemo.class - Test case ended

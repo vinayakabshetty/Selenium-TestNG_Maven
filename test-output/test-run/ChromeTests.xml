@@ -48,7 +48,7 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
   <testcase classname="utilities.TestBase" name="@AfterMethod tearDown" time="-1.718514935756E9">
     <skipped/>
   </testcase> <!-- @AfterMethod tearDown -->
-  <testcase classname="tests.Navigation_TestCases" name="navigateToEcommerceWebsites" time="4.239"/>
-  <testcase classname="tests.Navigation_TestCases" name="navigateToEcommerceWebsites" time="4.945"/>
-  <testcase classname="tests.Navigation_TestCases" name="navigateToEcommerceWebsites" time="2.689"/>
+  <testcase classname="tests.Navigation_TC" name="navigateToEcommerceWebsites" time="4.239"/>
+  <testcase classname="tests.Navigation_TC" name="navigateToEcommerceWebsites" time="4.945"/>
+  <testcase classname="tests.Navigation_TC" name="navigateToEcommerceWebsites" time="2.689"/>
 </testsuite> <!-- ChromeTests -->

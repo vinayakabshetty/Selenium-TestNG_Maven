@@ -1,59 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="5" failed="0" skipped="2">
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-16T10:45:26 IST" name="test-run" finished-at="2024-06-16T10:47:30 IST" duration-ms="123962">
+  <suite started-at="2024-06-19T14:55:15 IST" name="Default suite" finished-at="2024-06-19T14:55:15 IST" duration-ms="164">
     <groups>
     </groups>
-    <test started-at="2024-06-16T10:45:26 IST" name="FirefoxTests" finished-at="2024-06-16T10:45:35 IST" duration-ms="8856">
+    <test started-at="2024-06-19T14:55:15 IST" name="Default test" finished-at="2024-06-19T14:55:15 IST" duration-ms="164">
       <class name="tests.SwagLabs">
-        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:tests.SwagLabs@55dfcc6]" started-at="2024-06-16T10:45:26 IST" name="init" finished-at="2024-06-16T10:45:35 IST" duration-ms="8558" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:tests.SwagLabs@34a875b3]" started-at="2024-06-19T14:55:15 IST" name="init" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1718789115815" status="FAIL">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'VINAYAKABSHETTY', ip: '192.168.0.107'
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]]]>
+              <![CDATA[
+Parameter 'browserName' is required by BeforeMethod on method init but has not been marked @Optional or defined
+in C:\Users\lenovo\AppData\Local\Temp\testng-eclipse-359128679\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'VINAYAKABSHETTY', ip: '192.168.0.107'
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-at driverFactory.DriverFactory.init_driver(DriverFactory.java:27)
-at utilities.TestBase.init(TestBase.java:41)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browserName' is required by BeforeMethod on method init but has not been marked @Optional or defined
+in C:\Users\lenovo\AppData\Local\Temp\testng-eclipse-359128679\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
 at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -66,59 +35,40 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="loginToSwagLabs()[pri:1, instance:tests.SwagLabs@55dfcc6]" started-at="2024-06-16T10:45:35 IST" name="loginToSwagLabs" finished-at="2024-06-16T10:45:35 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method signature="loginToSwagLabs()[pri:1, instance:tests.SwagLabs@34a875b3]" started-at="2024-06-19T14:55:15 IST" name="loginToSwagLabs" finished-at="2024-06-19T14:55:15 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'VINAYAKABSHETTY', ip: '192.168.0.107'
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]]]>
+              <![CDATA[
+Parameter 'browserName' is required by BeforeMethod on method init but has not been marked @Optional or defined
+in C:\Users\lenovo\AppData\Local\Temp\testng-eclipse-359128679\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'VINAYAKABSHETTY', ip: '192.168.0.107'
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-at driverFactory.DriverFactory.init_driver(DriverFactory.java:27)
-at utilities.TestBase.init(TestBase.java:41)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browserName' is required by BeforeMethod on method init but has not been marked @Optional or defined
+in C:\Users\lenovo\AppData\Local\Temp\testng-eclipse-359128679\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
 at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -131,67 +81,48 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToSwagLabs -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SwagLabs@55dfcc6]" started-at="2024-06-16T10:45:35 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1718514935599" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SwagLabs@34a875b3]" started-at="2024-06-19T14:55:15 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1718789115872" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:tests.SwagLabs@55dfcc6]" started-at="2024-06-16T10:45:35 IST" name="init" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1718514935613" status="SKIP">
+        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:tests.SwagLabs@34a875b3]" started-at="2024-06-19T14:55:15 IST" name="init" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1718789115884" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="loginToSwagLabs_lockedOutUser()[pri:2, instance:tests.SwagLabs@55dfcc6]" started-at="2024-06-16T10:45:35 IST" name="loginToSwagLabs_lockedOutUser" finished-at="2024-06-16T10:45:35 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
+        <test-method signature="loginToSwagLabs_lockedOutUser()[pri:2, instance:tests.SwagLabs@34a875b3]" started-at="2024-06-19T14:55:15 IST" name="loginToSwagLabs_lockedOutUser" finished-at="2024-06-19T14:55:15 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'VINAYAKABSHETTY', ip: '192.168.0.107'
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]]]>
+              <![CDATA[
+Parameter 'browserName' is required by BeforeMethod on method init but has not been marked @Optional or defined
+in C:\Users\lenovo\AppData\Local\Temp\testng-eclipse-359128679\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Process unexpectedly closed with status 0 
-Host info: host: 'VINAYAKABSHETTY', ip: '192.168.0.107'
-Build info: version: '4.21.0', revision: '79ed462ef4'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}]}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:161)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:150)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:132)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:127)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:112)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:102)
-at driverFactory.DriverFactory.init_driver(DriverFactory.java:27)
-at utilities.TestBase.init(TestBase.java:41)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browserName' is required by BeforeMethod on method init but has not been marked @Optional or defined
+in C:\Users\lenovo\AppData\Local\Temp\testng-eclipse-359128679\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
 at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -204,148 +135,29 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToSwagLabs_lockedOutUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SwagLabs@55dfcc6]" started-at="2024-06-16T10:45:35 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1718514935756" status="SKIP">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SwagLabs@34a875b3]" started-at="2024-06-19T14:55:15 IST" name="tearDown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1718789115921" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.SwagLabs -->
-    </test> <!-- FirefoxTests -->
-    <test started-at="2024-06-16T10:45:26 IST" name="ChromeTests" finished-at="2024-06-16T10:45:49 IST" duration-ms="22773">
-      <class name="tests.Navigation_TestCases">
-        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:tests.Navigation_TestCases@1a482e36]" started-at="2024-06-16T10:45:26 IST" name="init" finished-at="2024-06-16T10:45:33 IST" duration-ms="6044" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:tests.Navigation_TestCases@1a482e36]" started-at="2024-06-16T10:45:26 IST" name="init" finished-at="2024-06-16T10:45:33 IST" duration-ms="6269" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:tests.Navigation_TestCases@1a482e36]" started-at="2024-06-16T10:45:26 IST" name="init" finished-at="2024-06-16T10:45:46 IST" duration-ms="19668" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="navigateToEcommerceWebsites(java.lang.String)[pri:2, instance:tests.Navigation_TestCases@1a482e36]" started-at="2024-06-16T10:45:33 IST" name="navigateToEcommerceWebsites" data-provider="ecommerceWebSiteUrl" finished-at="2024-06-16T10:45:37 IST" duration-ms="4945" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://www.amazon.in]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToEcommerceWebsites -->
-        <test-method signature="navigateToEcommerceWebsites(java.lang.String)[pri:2, instance:tests.Navigation_TestCases@1a482e36]" started-at="2024-06-16T10:45:33 IST" name="navigateToEcommerceWebsites" data-provider="ecommerceWebSiteUrl" finished-at="2024-06-16T10:45:37 IST" duration-ms="4239" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://www.snapdeal.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToEcommerceWebsites -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Navigation_TestCases@1a482e36]" started-at="2024-06-16T10:45:37 IST" name="tearDown" finished-at="2024-06-16T10:45:38 IST" duration-ms="1125" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Navigation_TestCases@1a482e36]" started-at="2024-06-16T10:45:38 IST" name="tearDown" finished-at="2024-06-16T10:45:38 IST" duration-ms="679" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="navigateToEcommerceWebsites(java.lang.String)[pri:2, instance:tests.Navigation_TestCases@1a482e36]" started-at="2024-06-16T10:45:46 IST" name="navigateToEcommerceWebsites" data-provider="ecommerceWebSiteUrl" finished-at="2024-06-16T10:45:49 IST" duration-ms="2689" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://www.flipkart.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToEcommerceWebsites -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.Navigation_TestCases@1a482e36]" started-at="2024-06-16T10:45:49 IST" name="tearDown" finished-at="2024-06-16T10:45:49 IST" duration-ms="346" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.Navigation_TestCases -->
-    </test> <!-- ChromeTests -->
-    <test started-at="2024-06-16T10:45:26 IST" name="IETests" finished-at="2024-06-16T10:47:30 IST" duration-ms="123962">
-      <class name="tests.SwagLabs">
-        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:tests.SwagLabs@46268f08]" started-at="2024-06-16T10:45:26 IST" name="init" finished-at="2024-06-16T10:47:22 IST" duration-ms="115677" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[internetexplorer]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="loginToSwagLabs()[pri:1, instance:tests.SwagLabs@46268f08]" started-at="2024-06-16T10:47:22 IST" name="loginToSwagLabs" finished-at="2024-06-16T10:47:24 IST" duration-ms="1726" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToSwagLabs -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SwagLabs@46268f08]" started-at="2024-06-16T10:47:24 IST" name="tearDown" finished-at="2024-06-16T10:47:25 IST" duration-ms="1416" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:tests.SwagLabs@46268f08]" started-at="2024-06-16T10:47:25 IST" name="init" finished-at="2024-06-16T10:47:28 IST" duration-ms="2246" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[internetexplorer]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="loginToSwagLabs_lockedOutUser()[pri:2, instance:tests.SwagLabs@46268f08]" started-at="2024-06-16T10:47:28 IST" name="loginToSwagLabs_lockedOutUser" finished-at="2024-06-16T10:47:29 IST" duration-ms="1415" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToSwagLabs_lockedOutUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SwagLabs@46268f08]" started-at="2024-06-16T10:47:29 IST" name="tearDown" finished-at="2024-06-16T10:47:30 IST" duration-ms="1408" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.SwagLabs -->
-    </test> <!-- IETests -->
-  </suite> <!-- test-run -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

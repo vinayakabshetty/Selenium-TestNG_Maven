@@ -7,13 +7,13 @@
   </listeners>
   <test thread-count="5" parallel="methods" name="Test(failed)">
     <classes>
-      <class name="tests.Navigation_TestCases">
+      <class name="tests.Navigation_TC">
         <methods>
           <include name="tearDown"/>
           <include name="navigateToGoogle"/>
           <include name="init"/>
         </methods>
-      </class> <!-- tests.Navigation_TestCases -->
+      </class> <!-- tests.Navigation_TC -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

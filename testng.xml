@@ -8,7 +8,6 @@
 	<parameter name="browserName" value="chrome"></parameter>
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="tests.Navigation_TestCases" />
 			<class name="tests.SwagLabs" />
 		</classes>
 	</test> <!--Test -->
