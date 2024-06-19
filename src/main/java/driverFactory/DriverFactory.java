@@ -1,13 +1,13 @@
 package driverFactory;
 
-import java.net.MalformedURLException;
+import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.Browser;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -35,11 +35,23 @@ public class DriverFactory {
 		getDriver().manage().window().maximize();
 		return getDriver();
 	}
-	
+
 	@SuppressWarnings("deprecation")
-	public static WebDriver init_driver_in_docker(String browserName) throws MalformedURLException {
+	public static WebDriver init_driver_in_docker(String browserName) throws IOException, InterruptedException {
 		System.out.println("Browser initiated in docker");
+
+		// Set up grid
+		ProcessBuilder processBuilder = new ProcessBuilder();
+		processBuilder.command("cmd", "/c", "docker selenium grid up.bat");
+		File dir = new File("C:\\Users\\lenovo\\eclipse-workspace\\Selenium-Maven_TestNG\\Docker_Grid_SetUp");
+		processBuilder.directory(dir);
+		Process process = processBuilder.start();
+		
+		Thread.sleep(20000);
+		// Setting up url
 		URL url = new URL("http://localhost:4444/wd/hub");
+
+		// initiate driver in docker
 		if (browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().browserInDocker().setup();
 			DesiredCapabilities cap = new DesiredCapabilities();

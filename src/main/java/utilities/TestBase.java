@@ -24,7 +24,7 @@ public class TestBase {
 	 */
 	@Parameters(value = { "browserName" })
 	@BeforeMethod
-	public void init(String browserName) throws IOException {
+	public void init(String browserName) throws IOException, InterruptedException {
 
 		Properties prop = null;
 		prop = ConfigReader.init("./src/main/resources/config.properties");
