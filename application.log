@@ -258,3 +258,11 @@
 22:24:37.130 [TestNG-test=Test-2]INFO  SimpleLog4jDemo.class - Test case ended
 22:24:38.405 [TestNG-test=Test-1]INFO  SimpleLog4jDemo.class - Test case started
 22:24:39.940 [TestNG-test=Test-1]INFO  SimpleLog4jDemo.class - Test case ended
+22:56:58.744 [TestNG-test=Test-1]INFO  SimpleLog4jDemo.class - Test case started
+22:56:58.912 [TestNG-test=Test-2]INFO  SimpleLog4jDemo.class - Test case started
+22:57:03.976 [TestNG-test=Test-2]INFO  SimpleLog4jDemo.class - Test case ended
+22:57:04.135 [TestNG-test=Test-1]INFO  SimpleLog4jDemo.class - Test case ended
+23:09:50.192 [TestNG-test=Test-1]INFO  SimpleLog4jDemo.class - Test case started
+23:09:50.207 [TestNG-test=Test-2]INFO  SimpleLog4jDemo.class - Test case started
+23:09:52.653 [TestNG-test=Test-2]INFO  SimpleLog4jDemo.class - Test case ended
+23:09:52.693 [TestNG-test=Test-1]INFO  SimpleLog4jDemo.class - Test case ended

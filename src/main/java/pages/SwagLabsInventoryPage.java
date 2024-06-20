@@ -19,7 +19,6 @@ public class SwagLabsInventoryPage {
 
 	public int countItemsInInventory() {
 		List<WebElement> inventoryCount = driver.findElements(inventoryItems);
-		System.out.println("The number of items in inventory is " + inventoryCount.size());
 		return inventoryCount.size();
 	}
 }

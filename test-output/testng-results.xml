@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-19T22:24:09 IST" name="test-run" finished-at="2024-06-19T22:24:40 IST" duration-ms="30733">
+  <suite started-at="2024-06-19T23:09:42 IST" name="test-run" finished-at="2024-06-19T23:09:52 IST" duration-ms="10426">
     <groups>
     </groups>
-    <test started-at="2024-06-19T22:24:09 IST" name="Test" finished-at="2024-06-19T22:24:40 IST" duration-ms="30733">
+    <test started-at="2024-06-19T23:09:42 IST" name="Test" finished-at="2024-06-19T23:09:52 IST" duration-ms="10426">
       <class name="tests.SwagLabs">
-        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:tests.SwagLabs@1a6c1270]" started-at="2024-06-19T22:24:09 IST" name="init" finished-at="2024-06-19T22:24:35 IST" duration-ms="25739" status="PASS">
+        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:tests.SwagLabs@6d1ef78d]" started-at="2024-06-19T23:09:42 IST" name="init" finished-at="2024-06-19T23:09:50 IST" duration-ms="7700" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:tests.SwagLabs@1a6c1270]" started-at="2024-06-19T22:24:09 IST" name="init" finished-at="2024-06-19T22:24:38 IST" duration-ms="28937" status="PASS">
+        <test-method is-config="true" signature="init(java.lang.String)[pri:0, instance:tests.SwagLabs@6d1ef78d]" started-at="2024-06-19T23:09:42 IST" name="init" finished-at="2024-06-19T23:09:50 IST" duration-ms="7733" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,19 +29,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="loginToSwagLabs_lockedOutUser()[pri:2, instance:tests.SwagLabs@1a6c1270]" started-at="2024-06-19T22:24:35 IST" name="loginToSwagLabs_lockedOutUser" finished-at="2024-06-19T22:24:37 IST" duration-ms="1926" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToSwagLabs_lockedOutUser -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SwagLabs@1a6c1270]" started-at="2024-06-19T22:24:37 IST" name="tearDown" finished-at="2024-06-19T22:24:37 IST" duration-ms="253" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method signature="loginToSwagLabs()[pri:1, instance:tests.SwagLabs@1a6c1270]" started-at="2024-06-19T22:24:38 IST" name="loginToSwagLabs" finished-at="2024-06-19T22:24:39 IST" duration-ms="1544" status="PASS">
+        <test-method signature="loginToSwagLabs()[pri:1, instance:tests.SwagLabs@6d1ef78d]" started-at="2024-06-19T23:09:50 IST" name="loginToSwagLabs" finished-at="2024-06-19T23:09:52 IST" duration-ms="2521" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToSwagLabs -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SwagLabs@1a6c1270]" started-at="2024-06-19T22:24:39 IST" name="tearDown" finished-at="2024-06-19T22:24:40 IST" duration-ms="192" status="PASS">
+        <test-method signature="loginToSwagLabs_lockedOutUser()[pri:2, instance:tests.SwagLabs@6d1ef78d]" started-at="2024-06-19T23:09:50 IST" name="loginToSwagLabs_lockedOutUser" finished-at="2024-06-19T23:09:52 IST" duration-ms="2449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToSwagLabs_lockedOutUser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SwagLabs@6d1ef78d]" started-at="2024-06-19T23:09:52 IST" name="tearDown" finished-at="2024-06-19T23:09:52 IST" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.SwagLabs@6d1ef78d]" started-at="2024-06-19T23:09:52 IST" name="tearDown" finished-at="2024-06-19T23:09:52 IST" duration-ms="126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

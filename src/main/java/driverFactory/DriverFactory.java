@@ -41,13 +41,15 @@ public class DriverFactory {
 		System.out.println("Browser initiated in docker");
 
 		// Set up grid
-		ProcessBuilder processBuilder = new ProcessBuilder();
-		processBuilder.command("cmd", "/c", "docker selenium grid up.bat");
-		File dir = new File("C:\\Users\\lenovo\\eclipse-workspace\\Selenium-Maven_TestNG\\Docker_Grid_SetUp");
-		processBuilder.directory(dir);
-		Process process = processBuilder.start();
-		
-		Thread.sleep(20000);
+		/*
+		 * ProcessBuilder processBuilder = new ProcessBuilder();
+		 * processBuilder.command("cmd", "/c", "docker selenium grid up.bat"); File dir
+		 * = new File(
+		 * "C:\\Users\\lenovo\\eclipse-workspace\\Selenium-Maven_TestNG\\Docker_Grid_SetUp"
+		 * ); processBuilder.directory(dir); Process process = processBuilder.start();
+		 * 
+		 * Thread.sleep(20000);
+		 */
 		// Setting up url
 		URL url = new URL("http://localhost:4444/wd/hub");
 
