@@ -45,13 +45,13 @@
 			<artifactId>log4j-api</artifactId>
 			<version>3.0.0-beta2</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports-testng-adapter -->
-<dependency>
-    <groupId>com.aventstack</groupId>
-    <artifactId>extentreports-testng-adapter</artifactId>
-    <version>1.2.2</version>
-</dependency>
-
+		<!--
+		https://mvnrepository.com/artifact/com.aventstack/extentreports-testng-adapter -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports-testng-adapter</artifactId>
+			<version>1.2.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -74,7 +74,7 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
-					<parallel>suites</parallel>
+					<parallel>methods</parallel>
 				</configuration>
 			</plugin>
 		</plugins>

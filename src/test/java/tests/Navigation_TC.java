@@ -10,6 +10,7 @@ import utilities.TestBase;
 
 public class Navigation_TC extends TestBase {
 
+	// Tests require  browser hence run only through xml file
 	@Ignore
 	@Test(priority = 1)
 	public void navigateToGoogle() {

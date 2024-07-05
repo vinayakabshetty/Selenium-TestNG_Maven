@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.SwagLabs">
+      <class name="tests.AWS_Tests">
         <methods>
-          <include name="tearDown"/>
-          <include name="loginToSwagLabs_lockedOutUser"/>
-          <include name="loginToSwagLabs"/>
-          <include name="init"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- tests.SwagLabs -->
+      </class> <!-- tests.AWS_Tests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

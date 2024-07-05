@@ -9,6 +9,7 @@
 	<test thread-count="5" name="Test">
 		<classes>
 			<class name="tests.SwagLabs" />
+			<class name="Navigation_TC"></class>
 		</classes>
 	</test> <!--Test -->
 </suite> <!--Suite -->
